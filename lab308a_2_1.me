@@ -1,0 +1,36 @@
+https://github.com/Sammy65433/GLAB-308A.2.1-An-Object-Oriented-Adventure
+
+
+Helpful references
+MDN – JSDoc @param – 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Comments/JSDoc#parameter
+
+MDN – Classes – 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+MDN – Static class fields – 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static
+
+Part 1 – Humble Beginnings	An object literal adventurer 
+that models Robin and his nested companions.
+
+Class Character	Base class with MAX_HEALTH, name, health, inventory, and a reusable roll() 
+method (returns the numeric roll).
+
+Class Companion	Extends Character; adds role, type, power, stamina, energy, experience.
+
+Class Adventurer	Extends Character; static ROLES, constructor validates the role, adds starter 
+items (bedroll, 50 gold coins), provides scout() and duel(opponent) methods.
+
+Factory AdventurerFactory	Generates many adventurers of a single role, stores them, and offers 
+findByIndex / findByName.
+
+Demo code	Instantiates a wizard Robin, a healer Leo, a flea Frank, runs rolls, scouting, creates a 
+healer factory, generates a healer named Mira, and runs a duel.
+
+JSDoc comments	@param and @returns tags explain parameters and return values; 
+
+Extending the project (ideas)
+Add experience/level‑up logic that increases power or stamina.
+Create subclasses for each role (Fighter, Healer, Wizard) with role‑specific methods 
+(attack(), heal(), castSpell()).
