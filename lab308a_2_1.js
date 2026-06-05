@@ -463,3 +463,19 @@ wizardFactory.generate("Bren");
 wizardFactory.generate("Cora");
 console.log("All wizards created by the factory:", wizardFactory.adventurers);
 
+// class AdventurerFactory { … } – class definition	
+// Syntax for creating a class, the constructor method, and how class bodies work.
+// constructor(role) { … } – constructor
+// if (!Adventurer.ROLES.includes(role)) { … } – static property access
+// this.adventurers = []; – instance property
+// generate(name) { … } Declaring regular (non‑static) methods on a class prototype.
+
+// new AdventurerFactory("Wizard") What the new operator 
+// does: creates an object, runs the constructor, and 
+// returns the instance.
+
+// wizardFactory.generate("Alia") How to invoke a method on 
+// an object instance.
+
+// wizardFactory.adventurers Dot‑notation property access 
+// (object.property).
