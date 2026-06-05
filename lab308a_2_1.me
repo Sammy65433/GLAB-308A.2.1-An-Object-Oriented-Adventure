@@ -34,3 +34,39 @@ Extending the project (ideas)
 Add experience/level‑up logic that increases power or stamina.
 Create subclasses for each role (Fighter, Healer, Wizard) with role‑specific methods 
 (attack(), heal(), castSpell()).
+
+
+
+***************************************MDN pages******************************
+
+class AdventurerFactory { … } – class definition	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes	
+Syntax for creating a class, the constructor method, and how class bodies work.
+
+
+constructor(role) { … } – constructor	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor	
+How the special constructor method is called with new, how to initialise instance fields.
+
+if (!Adventurer.ROLES.includes(role)) { … } – static property access	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static	
+How to read a static property (Adventurer.ROLES) from inside or outside the class.
+
+
+this.adventurers = []; – instance property	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this	
+The meaning of this inside a class method/constructor.
+
+
+generate(name) { … } – instance method	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Class_methods	
+Declaring regular (non‑static) methods on a class prototype.
+
+
+new AdventurerFactory("Wizard") – instantiating a class	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new	
+What the new operator does: creates an object, runs the constructor, and returns the instance.
+
+
+wizardFactory.generate("Alia") – calling a method	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions	
+How to invoke a method on an object instance.
+
+wizardFactory.adventurers – reading an instance field	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors	
+Dot‑notation property access (object.property).
+
+console.log("All wizards …", wizardFactory.adventurers); – console output	https://developer.mozilla.org/en-US/docs/Web/API/Console/log	
+How console.log works and why it’s useful for debugging.
